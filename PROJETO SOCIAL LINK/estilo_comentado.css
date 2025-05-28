@@ -1,0 +1,142 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define altura completa e fontes globais */
+html, body {
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Sora', sans-serif;
+    background-image: url("./FUNDO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+/* Permite empilhar os elementos verticalmente */
+body {
+    flex-direction: column;
+}
+
+/* Container centralizado com espaçamento interno */
+.container {
+    max-width: 540px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Gradiente de fundo para botões e círculos */
+.gradient {
+    background: linear-gradient(to right, #5579ba, #41A377);
+}
+
+/* Imagem de perfil redonda e centralizada corretamente */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; /* Mantém a proporção da imagem dentro do círculo */
+}
+
+/* Nome de usuário */
+.username {
+    font-weight: 400;
+    font-size: 1.8em;
+    margin: 16px 0 4px 0;
+    text-align: center;
+}
+
+/* Descrição do perfil */
+.description {
+    font-size: 1em;
+    color: #919193;
+    text-align: center;
+}
+
+/* Links padrão */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Lista de redes sociais (Instagram, WhatsApp, Facebook) */
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5em;
+}
+
+/* Cada botão da lista */
+.list-orden {
+    font-size: 1.2em;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+}
+
+/* Layout interno dos links */
+.link {
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Ícones pequenos nos botões */
+.link > img {
+    width: 1.2em;
+}
+
+/* Rodapé com ícones sociais pequenos e alinhados */
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+/* Cada ícone do rodapé */
+.conectar {
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.conectar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tamanho dos ícones do rodapé */
+.conectar > img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ajuste da fonte para telas maiores */
+@media screen and (min-width: 815px) {
+    html {
+        font-size: 16px;
+    }
+}
